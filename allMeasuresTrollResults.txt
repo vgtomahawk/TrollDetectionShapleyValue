@@ -1,0 +1,44 @@
+meanPrecisionFMF:0.0
+meanPrecisionPDC0.0
+meanPrecisionNNF0.0
+meanPrecisionNNDC0.0
+meanPrecisionNPF0.0
+meanPrecisionFAT0.0
+meanPrecisionNFADT0.0
+meanPrecisionNAF0.0
+meanPrecisionTwoHopNPF0.0
+meanPrecisionThreeHopNPF0.0
+meanPrecisionFourHopNPF0.0
+meanPrecisionTwoHopFMF0.0
+meanPrecisionThreeHopFMF0.0
+meanPrecisionFourHopFMF0.0
+Total Number Of Vertices:71512
+Maximum Vertex Id:71523
+Number Of Trolls FMF:10
+Number Of Trolls PDC:0
+Number Of Trolls NNF:17
+Number Of Trolls NNDC:17
+Number Of Trolls NPF:18
+Number Of Trolls FAT:15
+Number Of Trolls NFADT:19
+Number Of Trolls NAF:18
+Number Of Trolls 2 Hop NPF:16
+Number Of Trolls 3 Hop NPF:22
+Number Of Trolls 4 Hop NPF:12
+Number Of Trolls 2 Hop NPF:25
+Number Of Trolls 3 Hop NPF:7
+Number Of Trolls 4 Hop NPF:0
+FMF Average Precision:0.03075828985320057
+PDC Average Precision:6.842471019427495E-4
+NNF Average Precision:0.13969498298279553
+NNDC Average Precision:0.15104135148273787
+NPF Average Precision:0.10394214451553842
+FAT  Average Precision:0.09166728280277077
+NFADT Average Precision:0.12992027641469703
+NAF Precision:0.10394214451553842
+2 Hop NPF Precision:0.14845948031941333
+3 Hop NPF Precision:0.19338686012441889
+4 Hop NPF Precision:0.12660723013350625
+2 Hop FMF Precision:0.1584968027609426
+3 Hop FMF Precision:0.023668035307874317
+3 Hop FMF Precision:0.0029417372098570677

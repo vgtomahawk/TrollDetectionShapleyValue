@@ -1,0 +1,84 @@
+README for the DAI-Labor Slashdot Zoo dataset.
+
+Please send comments, errors, etc. to jerome.kunegis@dai-labor.de
+
+
+---------
+Summary
+---------
+
+The Slashdot Zoo is the social network of technology news website
+Slashdot (http://slashdot.org/).  It consists of 510,000 relationships
+among 78,000 users.  
+
+Relationships can be positive ("friend") or negative ("foe").  The
+network is directed, i.e. A having B as friend does not imply B having A
+as friend; some inverse relationships may even be "skewed".  
+
+In addition to the dataset itself, we provide test and training data for
+troll classification and link prediction as described in the following
+paper: 
+
+The Slashdot Zoo:  Mining a Social Network with Negative Edges.  Jerome
+Kunegis, Andreas Lommatzsch, and Christian Bauckhage.  In Proceedings of
+the International Conference on World Wide Web, pp. 741--750, 2009. 
+[http://www.dai-labor.de/index.php?id=1034&pubID=404]
+
+Please cite that paper when referring to this dataset. 
+
+
+-------
+Files
+-------
+
+out.corpus -- Full dataset
+
+  Each line represents one endorsement.  
+  
+  Format:   
+    UserA UserB +		UserA marked UserB as a friend
+    UserA UserB - 		UserA marked UserB as a foe
+
+  Usernames are URL-encoded (e.g. "%24" instead of "$" and spaces
+  replaced by "+")
+
+out.matrix -- Full dataset (numeric)
+
+  The same information as "out.corpus" but numeric.  Users are
+  represented by continuous IDs ranging from 1 to 71523.  The
+  relationship type (friend/foe) is represented as +1 and -1.  This file
+  can be read by Matlab. 
+
+out.userids -- Mapping between usernames and IDs
+
+  Usernames are not URL-encoded.
+
+	
+--------------------------------
+Files for troll classification
+--------------------------------
+
+out.trolls -- List of trolls
+
+  The user IDs of troll users.  Used as the test set for troll
+  prediction.  These users are the foes of user No More Trolls.  
+
+out.matrix.clean -- Training set for troll classification
+
+  The dataset without the foe-links of user No More Trolls, in the same
+  format as "out.matrix". 
+
+
+--------------------------
+Files for link prediction
+--------------------------
+
+out.test -- Test set
+
+  A 30% subset of all links, used as the test set.  In the same format
+  and using the same user IDs as "out.matrix".  
+
+out.training -- Training set
+
+  The remaining 70% of the dataset, in the same format and using the
+  same user IDs as "out.matrix". 
